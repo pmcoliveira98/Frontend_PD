@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar">
+  
+</div>
+
+<div id="app">
+  <div id="formContainer"><img src="images/img.jpg" alt="" id="imglivro"></div>  
+  <div id="entityInfoContainer"></div> 
+  <div id="livrosSection" class="entity-section" style="display:none;"></div>
+  
+  <div id="createEntityButtonContainer">
+    <button id="createEntityButton" onclick="showCreateEntityForm()">Adicionar Livro</button>
+  </div>
+  <div id="autoAssignEntityButtonContainer">
+    <button id="autoAssignEntityButton" onclick="showAutoAssignEntityForm()">Auto Assign</button>
+  </div>
+  <div id="backButtonContainer" style="display: none;">
+    <button id="backButton" class="back-button" onclick="goBack()">Retroceder</button>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

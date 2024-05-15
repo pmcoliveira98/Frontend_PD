@@ -1,0 +1,345 @@
+*{
+  font-family: Lucida Handwriting;
+
+}
+
+body{
+  background-color: #c3d0db;
+}
+
+#navbar {
+  background-color: #5979be;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  max-width: fit-content;
+  padding-right: 95%;
+}
+
+#navbar .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+#imglivro{
+  width: 100%;
+  height: 100%;
+
+}
+
+#navbar .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+
+#navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(205, 227, 255);
+  min-width: 160px;
+
+  z-index: 1;
+}
+
+#navbar .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#navbar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+#navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-submenu-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-content {
+  display: block;
+}
+
+
+.entity-section {
+  padding: 10px; 
+}
+
+
+.entity-section:last-child {
+  margin-bottom: 20px; 
+}
+
+.update-icon, .delete-icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.update-icon:hover, .delete-icon:hover {
+  color: red;
+}
+
+.table-container {
+  width: 100%; 
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.entity-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+}
+
+.entity-table thead th {
+  background-color: #5979be;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+}
+
+.entity-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.entity-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.entity-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.action-button {
+  padding: 5px 10px;
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.update {
+  background-color: #a4adaf;
+  color: white;
+}
+
+.delete {
+  background-color: #800501;
+  color: white;
+}
+.view{
+  background-color: #428bca;
+  color: white;
+
+}
+
+#createEntityButtonContainer {
+  display: none;
+  text-align: right; 
+  margin-bottom: 20px; 
+}
+
+#createEntityButton {
+  padding: 12px 24px; 
+  background-color: #5979be; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  margin-right: 10px; 
+  margin-bottom: 10px; 
+  margin-right: 95%;
+}
+
+
+#createEntityButton:hover {
+  background-color: #9ea1af;
+}
+
+
+.entity-info-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+}
+
+.entity-info-table th,
+.entity-info-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.entity-info-table th {
+  background-color: #428bca; 
+  color: white;
+  text-align: left;
+}
+
+.entity-info-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.entity-info-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+#autoAssignEntityButtonContainer {
+  display: block; 
+  text-align: right; 
+  margin-bottom: 20px; 
+}
+
+#autoAssignEntityButton {
+  padding: 10px 20px; 
+  background-color: #428bca; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+}
+
+
+#autoAssignEntityButton:hover {
+  background-color: #3071a9; 
+}
+
+.back-button {
+  padding: 12px 24px; 
+  background-color: #808080; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  margin-left: 10px; 
+}
+
+
+.back-button:hover {
+  background-color: #6c6c6c; 
+}
+#entityInfoContainer {
+  margin-bottom: 20px; 
+}
+
+#formContainer {
+  background-color: #f8f8f8; 
+  padding: 20px;            
+  margin: 20px auto;       
+  width: 50%;              
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+#formContainer div {
+  margin-bottom: 15px; 
+}
+
+
+#formContainer input[type="text"] {
+  width: calc(100% - 22px); 
+  padding: 10px;            
+  margin-top: 5px;          
+  border: 1px solid #ddd;   
+}
+
+
+#formContainer label {
+  display: block; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+
+#formContainer button[type="submit"] {
+  background-color: #578ab6; 
+  color: white;             
+  padding: 10px 15px;       
+  border: none;              
+  cursor: pointer;           
+  font-size: 16px;           
+  margin-top: 10px;          
+}
+
+
+#formContainer button[type="submit"]:hover {
+  background-color: #3071a9; 
+}
+
+
+@media (max-width: 768px) {
+  #formContainer {
+    width: 90%; 
+  }
+}
+
+.form-button-container {
+  text-align: right; 
+}
+
+
+.form-button-container button {
+  min-width: 100px; 
+
+}
+.assignment-section {
+  display: block;
+}
+
+.assignment-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; 
+}
+
+.radio-option label {
+  margin-right: 10px;
+}
+#main-image {
+  width: 65%; 
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
